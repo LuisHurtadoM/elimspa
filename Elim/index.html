@@ -11,11 +11,11 @@
         body {
             margin: 0;
             font-family: "Montserrat";
-            
             line-height: 1.6;
         }
         .container {
             max-width: 1200px;
+            max-height: fit-content;
             margin: 0 auto;
             padding: 20px;
         }
@@ -27,20 +27,34 @@
             min-height: 300px; /* Altura mínima para secciones */
         }
         header {
-            height: 100vh; /* Altura completa de la ventana para el encabezado */
+            height: 110vh; /* Altura completa de la ventana para el encabezado */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-bottom: auto;
         }
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
         }
         @media (max-width: 768px) {
             .grid {
                 grid-template-columns: 1fr;
+            }
+        }
+        .masages {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .masages {
+                grid-column: span 1;
             }
         }
         .cta {
@@ -61,31 +75,42 @@
                 <img src="./src/pics/logo2.png" alt="">
             </div>
             <br>
-            <h5>Linea de jabones naturales.</h5>
-            <h5>Masajes.</h5>
+            <h5>Natural soaps.</h5>
+            <h5>Massages.</h5>
             <a href="#" class="cta">Conoce mas</a>
             <a href="https://wa.me/31651987365"><img src="./src/pics/whatsapp.png" alt=""></a>
         </header>
         <section class="grid">
             <div>
-                <h2>Jabones tipo 1</h2>
-                <p>Contenido de la sección 1...</p>
+                <h2>Soaps type 1</h2>
+                <p>Section contents 1...</p>
+                <img src="./src/pics/IMG_6030.jpeg" alt="Jabones">
             </div>
             <div>
-                <h2>Jabones tipo 2</h2>
-                <p>Contenido de la sección 2...</p>
+                <h2>Soaps type 2</h2>
+                <p>Section contents 2...</p>
+                <img src="./src/pics/IMG_7686.jpeg" alt="Jabones">
             </div>
             <div>
-                <h2>Jabones tipo 3</h2>
-                <p>Contenido de la sección 1...</p>
+                <h2>Soaps type 3</h2>
+                <p>Section contents 3...</p>
+                <img src="./src/pics/IMG_7677.jpeg" alt="Jabones">
             </div>
             <div>
-                <h2>Jabones tipo 4</h2>
-                <p>Contenido de la sección 2...</p>
+                <h2>Soaps type 4</h2>
+                <p>Section contents 4...</p>
+                <img src="./src/pics/IMG_7676.jpeg" alt="Jabones">
+            </div>
+            <div class="masages">
+                <h2>Massages</h2>
+                <p>Massage section contents...</p>
+                <img src="./src/pics/massage-3795693_1280.jpg" alt="Jabones">
             </div>
         </section>
         <footer>
-            <p>Pie de página con información adicional.</p>
+            <div>
+                <img src="./src/pics/IG logo.png" alt="IG Logo" style="width: 150px; height: 120px;">
+            </div>
         </footer>
     </div>
 </body>
