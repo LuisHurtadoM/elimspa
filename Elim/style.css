@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    max-height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+header, section, footer {
+    margin: 20px 0;
+    padding: 40px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    min-height: 300px; /* Altura mínima para secciones */
+}
+header {
+    height: 150vh; /* Altura completa de la ventana para el encabezado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+.masages {
+    grid-column: span 2;
+}
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    header{
+        height: 70vh;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .masages {
+        grid-column: span 1;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+}

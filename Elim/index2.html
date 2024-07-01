@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Cards Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1 Title</h5>
+                    <p class="card-text">Brief description of Card 1.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 1 Title" data-text="Detailed description of Card 1." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 2">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2 Title</h5>
+                    <p class="card-text">Brief description of Card 2.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 2 Title" data-text="Detailed description of Card 2." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 3">
+                <div class="card-body">
+                    <h5 class="card-title">Card 3 Title</h5>
+                    <p class="card-text">Brief description of Card 3.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 3 Title" data-text="Detailed description of Card 3." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+
+         <!-- Card 1 -->
+         <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 4">
+                <div class="card-body">
+                    <h5 class="card-title">Card 4 Title</h5>
+                    <p class="card-text">Brief description of Card 4.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 4 Title" data-text="Detailed description of Card 4." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 5">
+                <div class="card-body">
+                    <h5 class="card-title">Card 5 Title</h5>
+                    <p class="card-text">Brief description of Card 5.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 5 Title" data-text="Detailed description of Card 5." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card 6">
+                <div class="card-body">
+                    <h5 class="card-title">Card 6 Title</h5>
+                    <p class="card-text">Brief description of Card 6.</p>
+                    <a href="#" class="btn btn-primary view-more" data-title="Card 6 Title" data-text="Detailed description of Card 6." data-img="https://via.placeholder.com/150">View More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" class="img-fluid mb-3" alt="Card image">
+        <p id="modalText"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.view-more').on('click', function(){
+      var title = $(this).data('title');
+      var text = $(this).data('text');
+      var img = $(this).data('img');
+      
+      $('#modalTitle').text(title);
+      $('#modalText').text(text);
+      $('#modalImg').attr('src', img);
+      
+      $('#cardModal').modal('show');
+    });
+  });
+</script>
+</body>
+</html>
