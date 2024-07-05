@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./src/pics/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style3.css">
+    <title>Whitening</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #89AB7A;">
+        <a class="navbar-brand" href="#"> <img src="./src/pics/logo2.png" alt="" style="width: 70px; height: 46px;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="./inicio.html">Home </a>
+            <a class="nav-item nav-link" href="./detoxifying.html">Detoxifying</a>
+            <a class="nav-item nav-link" href="./soothing.html">Soothing</a>
+            <a class="nav-item nav-link" href="./moisturizing.html">Moisturizing</a>
+            <a class="nav-item nav-link" href="./whitening.html">Whitening & Exfoliant</a>
+            <a class="nav-item nav-link" href="./whitening.html">Massages</a>
+           <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+          </div>
+        </div>
+      </nav>
+    <div class="content-container">
+        <header>
+            <!--<img src="./src/pics/logo2.png" alt="" style="width: 350px; height: 237px;"> -->
+            <h3>Whitening & Exfoliant soaps benefits</h3>
+            <p>Whitening soaps reduce the Hyperpigmentation, They can lighten dark spots, acne scars, and even out skin tone.
+                They also have brightening effects, the regular use can lead to a brighter complexion overall, also they
+                offer a gentle exfoliation, Some whitening soaps contain mild exfoliants that help remove dead skin cells, revealing fresh skin.</p>
+            <br>
+
+            <p> Exfoliating soaps offer a deep cleansing, They effectively remove dirt, oil, and impurities from the skin's surface and pores.
+                Also they improved skin texture, a regular exfoliation helps smooth rough patches and can enhance skin's smoothness. Also they
+                stimulate the cells renewal, by sloughing off dead skin cells, they promote the growth of new, healthy cells.
+
+            </p>
+            <br>
+            
+                
+        </header>
+    </div>
+    <section>
+
+        <div class="tarjetas">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/rice.jpg" class="card-img-top" alt="Card 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Rice Soap</h5>
+                                <p class="card-text">The star ingredient in this soap is rice oil, recognized for its exceptional benefits in the world of natural cosmetics. </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Rice Soap" data-text="Rice has been appreciated for centuries for its rejuvenating, soothing, healing properties and its ability to illuminate and soften the skin." data-img="./src/pics/rice.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/curcuma.jpg" class="card-img-top" alt="Card 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Turmeric Soap</h5>
+                                <p class="card-text">With its ILLUMINATING, ANTI-INFLAMMATORY, and ACNE-CLEANSING properties, the use of TURMERIC in skincare is gaining popularity in the beauty market. </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Turmeric Soap" data-text="It is common to use turmeric in soaps due to its ability to PREVENT CLOGGED PORES and stop the growth of ACNE-CAUSING BACTERIA." data-img="./src/pics/curcuma.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/charcoal.jpg" class="card-img-top" alt="Card 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Activated charcoal soap</h5>
+                                <p class="card-text">Antiseptic and antibacterial, ideal for facial cleansing of people with combination, oily, or acne-prone skin. </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Activated charcoal soap" data-text="It also helps reduce skin spots and marks." data-img="./src/pics/charcoal.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+            </div>
+
+        </div>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImg" src="" class="img-fluid mb-3" alt="Card image">
+                <p id="modalText"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          function checkWindowSize() {
+            if (window.innerWidth <= 768) {
+              $('.view-more').addClass('d-none');
+            } else {
+              $('.view-more').removeClass('d-none');
+            }
+          }
+  
+          // Check window size on load
+          checkWindowSize();
+  
+          // Check window size on resize
+          $(window).resize(function() {
+            checkWindowSize();
+          });
+  
+          $('.view-more').on('click', function(event){
+            if (window.innerWidth > 768) {
+              var title = $(this).data('title');
+              var text = $(this).data('text');
+              var img = $(this).data('img');
+              
+              $('#modalTitle').text(title);
+              $('#modalText').text(text);
+              $('#modalImg').attr('src', img);
+              
+              $('#cardModal').modal('show');
+            } else {
+              event.preventDefault();
+            }
+          });
+        });
+      </script>
+
+
+
+    <footer>
+        <div>
+            <img src="./src/pics/IG logo.png" alt="IG Logo" style="width: 75px; height: 60px;">
+        </div>
+    </footer>
+</body>
+</html>

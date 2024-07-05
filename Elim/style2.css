@@ -2,29 +2,57 @@ body {
     margin: 0;
     font-family: "Montserrat";
     line-height: 1.6;
-    text-decoration: none;
 }
-.container {
-    max-width: 1200px;
-    max-height: fit-content;
-    margin: 0 auto;
-    padding: 20px;
+
+header {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    min-height: 300px; /* Altura mínima para secciones */
 }
-header, section, footer {
+section, footer {
     margin: 20px 0;
     padding: 40px;
     background: #f4f4f4;
     border-radius: 8px;
     min-height: 300px; /* Altura mínima para secciones */
 }
-header {
-    height: 150vh; /* Altura completa de la ventana para el encabezado */
+.content-container {
+    margin-top: 10px;
+    min-height: 550px;
+}
+.image-container {
+    display: flex;
+    gap: 10px; 
+}
+.image-container2 {
+    display: flex;
+    gap: 10px; 
+}
+ .image-container img {
+    width: 150px !important;
+    height: 200px !important;
+} 
+.inicio2{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header {
+    height: 150vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: auto;
-}
+} */
 .image-container {
     display: flex;
     gap: 10px; /* Añade un espacio entre las imágenes si lo deseas */
@@ -36,10 +64,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
-.grid a{
-    text-decoration: none;
-    color: black;
 }
 
 .grid img {

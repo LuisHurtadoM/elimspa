@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./src/pics/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style3.css">
+    <title>Moisturizing</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #89AB7A;">
+        <a class="navbar-brand" href="#"> <img src="./src/pics/logo2.png" alt="" style="width: 70px; height: 46px;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="./inicio.html">Home </a>
+            <a class="nav-item nav-link" href="./detoxifying.html">Detoxifying</a>
+            <a class="nav-item nav-link" href="./soothing.html">Soothing</a>
+            <a class="nav-item nav-link" href="./moisturizing.html">Moisturizing</a>
+            <a class="nav-item nav-link" href="./whitening.html">Whitening & Exfoliant</a>
+            <a class="nav-item nav-link" href="./whitening.html">Massages</a>
+           <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+          </div>
+        </div>
+      </nav>
+    <div class="content-container">
+        <header>
+            <!--<img src="./src/pics/logo2.png" alt="" style="width: 350px; height: 237px;"> -->
+            <h3>Moisturizing soaps benefits</h3>
+            <p>Moisturizing soaps offer several benefits for the skin, including:
+
+                Hydrationhey help maintain and replenish the skin's natural moisture, preventing dryness and flakiness.
+                Nourishment: Enriched with vitamins and essential oils, they provide nutrients that improve skin health and appearance.
+                Soothing: Ideal for sensitive or irritated skin, moisturizing soaps can calm and reduce inflammation.
+                Protection: They create a barrier that protects the skin from environmental damage and harsh elements.
+                Improved Texture: Regular use can make the skin feel softer and smoother.
+                Anti-Aging: By keeping the skin hydrated, they help reduce the appearance of fine lines and wrinkles. </p>
+            <br>
+
+            
+            <br>
+            
+                
+        </header>
+    </div>
+    <section>
+
+        <div class="tarjetas">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/karite.jpg" class="card-img-top" alt="shea butter soap">
+                            <div class="card-body">
+                                <h5 class="card-title">Shea Butter Soap</h5>
+                                <p class="card-text">It's Anti-inflammatory power not only heals, but shea butter also soothes the skin and relieves skin problems such as irritations, ulcers, abrasions, eczema, bites, etc. </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Shea Butter Soap" data-text="It's also antioxidant. Its high concentration of vitamins A and E helps protect the skin from free radicals and aging." data-img="./src/pics/karite.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/avocado.jpg" class="card-img-top" alt="avocado soap">
+                            <div class="card-body">
+                                <h5 class="card-title">Avocado Soap</h5>
+                                <p class="card-text">Perfect for the daily hygiene of dry or very dry skin. It promotes the care and treatment of aged and damaged skin. It helps in the nutrition and hydration of dry-prone skin. </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Avocado Soap" data-text="Reduces the appearance of stretch marks and improves their appearance." data-img="./src/pics/avocado.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/pics/rose.jpg" class="card-img-top" alt="rose soap">
+                            <div class="card-body">
+                                <h5 class="card-title">Rose Soap</h5>
+                                <p class="card-text">Deeply nourishes and hydrates, providing softness and elasticity to the skin, with antioxidant properties that relieve stress and regenerate the skin.  </p>
+                                <a href="#" class="btn btn-primary view-more" data-title="Rose Soap" data-text="Contains petals of wild rose flowers that offer a comforting sensation when used." data-img="./src/pics/rose.jpg">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+            </div>
+
+        </div>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImg" src="" class="img-fluid mb-3" alt="Card image">
+                <p id="modalText"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          function checkWindowSize() {
+            if (window.innerWidth <= 768) {
+              $('.view-more').addClass('d-none');
+            } else {
+              $('.view-more').removeClass('d-none');
+            }
+          }
+  
+          // Check window size on load
+          checkWindowSize();
+  
+          // Check window size on resize
+          $(window).resize(function() {
+            checkWindowSize();
+          });
+  
+          $('.view-more').on('click', function(event){
+            if (window.innerWidth > 768) {
+              var title = $(this).data('title');
+              var text = $(this).data('text');
+              var img = $(this).data('img');
+              
+              $('#modalTitle').text(title);
+              $('#modalText').text(text);
+              $('#modalImg').attr('src', img);
+              
+              $('#cardModal').modal('show');
+            } else {
+              event.preventDefault();
+            }
+          });
+        });
+      </script>
+
+
+
+    <footer>
+        <div>
+            <img src="./src/pics/IG logo.png" alt="IG Logo" style="width: 75px; height: 60px;">
+        </div>
+    </footer>
+</body>
+</html>
