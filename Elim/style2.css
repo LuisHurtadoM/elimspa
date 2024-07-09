@@ -5,61 +5,45 @@ body {
 }
 
 header {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: white;
     border-radius: 8px;
-    min-height: 300px; /* Altura mínima para secciones */
+    min-height: 300px;
 }
+
 section, footer {
     margin: 20px 0;
     padding: 40px;
     background: #f4f4f4;
     border-radius: 8px;
-    min-height: 300px; /* Altura mínima para secciones */
+    min-height: 300px;
 }
+
 .content-container {
     margin-top: 10px;
     min-height: 550px;
 }
-.image-container {
+
+.image-container, .image-container2 {
     display: flex;
-    gap: 10px; 
+    gap: 10px;
 }
-.image-container2 {
-    display: flex;
-    gap: 10px; 
+
+.image-container img, .image-container2 img {
+    width: 150px;
+    height: 200px;
 }
- .image-container img {
-    width: 150px !important;
-    height: 200px !important;
-} 
-.inicio2{
-    
+
+.inicio2 {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-/* header {
-    height: 150vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: auto;
-} */
-.image-container {
-    display: flex;
-    gap: 10px; /* Añade un espacio entre las imágenes si lo deseas */
-}
-.inicio{
-    background-color: white !important;
-}
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -70,9 +54,11 @@ section, footer {
     width: 100%;
     height: auto;
 }
+
 .masages {
     grid-column: span 2;
 }
+
 .cta {
     display: inline-block;
     padding: 10px 20px;
@@ -82,21 +68,26 @@ section, footer {
     border-radius: 5px;
     margin-top: 20px;
 }
+
 @media (max-width: 768px) {
-    header{
-        height: 70vh;
+    header {
+        height: 100vh;
     }
+
     .grid {
         grid-template-columns: 1fr;
     }
+
     .masages {
         grid-column: span 1;
     }
+
     .logo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .logo img {
         width: 100%;
         height: auto;
