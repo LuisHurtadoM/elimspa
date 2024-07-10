@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Montserrat";
     line-height: 1.6;
+    background-color: #AD8762;
 }
 
 header {
@@ -31,6 +32,9 @@ section, footer {
     display: flex;
     flex-direction: column;
     height: 100%; /* Asegura que cada tarjeta ocupe el 100% de la altura del contenedor */
+    border: 1px solid #AD8762;
+    
+    box-shadow: black;
   }
 
   .card-body {
@@ -49,6 +53,7 @@ section, footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #AD8762;
 
 }
  .image-container img {
@@ -100,9 +105,71 @@ section, footer {
     border-radius: 5px;
     margin-top: 20px;
 }
+.piepagina {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los divs */
+    align-items: flex-start; /* Alinea los divs al inicio del contenedor */
+}
+
+.piepagina div {
+    flex: 1; /* Hace que ambos divs ocupen el mismo ancho */
+    margin: 0 10px; /* Añade margen horizontal entre los divs */
+}
+
+.piepagina img {
+    width: 75px;
+    height: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h4 {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.content-container header {
+    margin: 0 auto; /* Establece margen superior e inferior automático y márgenes laterales automáticos para centrar */
+    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+    padding: 20px; /* Añade espacio interior para mejorar la legibilidad y el aspecto */
+    text-align: center; /* Centra el texto dentro del header */
+}
 @media (max-width: 768px) {
     header{
-        height: 100vh;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .grid {
         grid-template-columns: 1fr;
